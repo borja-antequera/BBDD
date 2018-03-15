@@ -1,0 +1,9 @@
+SELECT * FROM sakila.actor;
+
+SELECT DISTINCT first_name FROM sakila.actor WHERE first_name='Joe';
+
+SELECT * FROM sakila.film WHERE rental_duration=6 AND rental_rate>=2.99;
+
+SELECT * FROM sakila.film WHERE replacement_cost BETWEEN 15.99 AND 22.99;
+
+SELECT * FROM sakila.customer WHERE store_id IN(1) AND first_name IN ('Mary','Nancy','Donna');
